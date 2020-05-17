@@ -53,16 +53,16 @@ resource_info = get_resource_info()
 camera_info = get_camera_info(get_camera_ids(resource_info))
 
 
-camera_url_list = [{ 'Description': entity['entity']['description'], 'streamURL': entity['entity']['realTimeStreamUrl']} for entity in camera_info]
+camera_url_list = [{ 'Description': entity['entity']['description'], 'route':entity['entity']['route'], 'streamURL': entity['entity']['realTimeStreamUrl']} for entity in camera_info]
 
-print (camera_url_list)
 
 PT= PrettyTable()
-PT.field_names = ['Description', 'Stream URL' ]
+PT.field_names = ['Description', 'Route', 'Stream URL' ]
 PT.align['Description'] = 'l'
+PT.align['Route'] = 'l'
 PT.align['Stream URL'] = 'l'
 
 for cam in camera_url_list:
-    PT.add_row([cam['Description'], cam['streamURL']])
+    PT.add_row([cam['Description'], cam['route'], cam['streamURL']])
 
 print (PT)
