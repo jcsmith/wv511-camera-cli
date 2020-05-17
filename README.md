@@ -1,4 +1,4 @@
-# wv411-camera-cli
+# wv511-camera-cli
 
 A command line interface to list traffic cameras and the associated RTRSP URL.
 
