@@ -2,12 +2,12 @@
 
 A command line interface to list traffic cameras and the associated RTRSP URL.
 
-This is useful to avoid using the website at wv411.org and avoid using flash player.
+This is useful to avoid using the website at wv511.org and avoid using flash player.
 
 ## Usage
 Execute the command:
 
-`python3 wv411-camera-cli.py`
+`python3 wv511-camera-cli.py`
 
 To list the description and RTSP URL.
 
